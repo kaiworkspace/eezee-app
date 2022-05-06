@@ -9,7 +9,8 @@ export default function FeaturedBrands(){
     
     const renderBrands=brands.map((brand)=>{
         return (
-            <div 
+            <div
+                key={brand.id} 
                 className={styles.brandCard}
                 onClick={()=>{console.log("Card Clicked")}}>
                 <img src={brand.imgSrc}></img>
