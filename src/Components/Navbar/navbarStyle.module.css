@@ -2,13 +2,13 @@
 .flexTop{
     display: flex;
     justify-content: center;
-    background-color: lightgrey;
+    background-color: #F0F0F0;
 }
 
 .topBarContainer{
     /* border: 2px dotted red; */
     display: flex;
-    background-color: lightgrey;
+    background-color: #F0F0F0;
     height: 2em;
     width: 60%;
 }
