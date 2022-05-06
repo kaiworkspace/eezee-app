@@ -1,7 +1,7 @@
 .searchBar{
     border: 2px solid grey;
     border-radius: 2em;
-    width: 300px;
+    width: 350px;
     height: 15px;
     padding: 1em;
     align-items: center;
@@ -12,6 +12,7 @@
 
 .searchInput{
     border: none;
+    width: 250px;
 }   
 
 .searchInput:focus{

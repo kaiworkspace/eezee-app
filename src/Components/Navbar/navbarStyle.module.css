@@ -1,43 +1,62 @@
+
+.flexTop{
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+}
+
 .topBarContainer{
     /* border: 2px dotted red; */
     display: flex;
-    justify-content:flex-start;
     background-color: lightgrey;
     height: 2em;
+    width: 60%;
 }
 
 .topBarInfoContainer{
-    /* border: 2px solid red; */
+    /* border: 2px dotted green; */
     display: flex;
     align-items: center;
-    margin-left: 230px;
-    width: 20%;
-    justify-content: space-between;
+    width: 30%;
 }
 
-.topBarElement{
+.topBarRegion{
     /* border: 2px solid gold; */
     display: flex;
     align-items: center;
+}
+
+.topBarContact{
+    /* border: 2px solid gold; */
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
 }
 
 .topBarText{
     margin-left: 1em;
 }
 
+.flexMid{
+    display: flex;
+    justify-content: center;
+}
+
 .mainContainer{
     /* border: 2px dashed blue; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding-top: 1em;
     height: 4em;
+    width: 60%;
 }
 
 .mainLeftContainer{
     display: flex;
     align-items: center;
     /* border: 2px solid red; */
-    width: 40%;
+    width: 60%;
     justify-content: space-between;
 }
 
@@ -70,17 +89,23 @@
     padding-top: 5px;
 }
 
+.flexBottom{
+    display: flex;
+    justify-content: center;
+}
+
 .bottomContainer{
     /* border: 2px solid red; */
     height: 2em;
     padding: 0px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid lightgray;
+    width: 60%;
 }
 
 .bottomText{
-    margin-left: 230px;
+    /* border: 2px dotted red; */
+    text-align: start;
     color: blue;
 }
 
