@@ -1,0 +1,12 @@
+.flexCarousel{
+    display: flex;
+    justify-content: center;
+}
+
+.carouselContainer{
+    border: 2px solid white;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
