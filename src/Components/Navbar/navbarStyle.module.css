@@ -1,0 +1,21 @@
+.topBarContainer{
+    border: 2px dotted red;
+    display: flex;
+    justify-content:flex-start;
+    background-color: lightgrey;
+}
+
+.topBarElement{
+    border: 2px solid gold;
+    display: flex;
+    align-items: center;
+    margin-left: 16em;
+}
+
+.mainContainer{
+    border: 2px dashed blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
