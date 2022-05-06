@@ -45,6 +45,31 @@
     cursor: pointer;
 }
 
+.mainRightContainer{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mainRightContainer:hover{
+    cursor: pointer;
+}
+
+.cartCount{
+    border: 2px solid blue;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    width: 1em;
+    position: absolute;
+    text-align: center;
+}
+
+.cartIcon{
+    font-size: 2.5em;
+    padding-top: 5px;
+}
+
 .bottomContainer{
     /* border: 2px solid red; */
     height: 2em;

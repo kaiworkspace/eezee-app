@@ -1,5 +1,6 @@
+import { useState } from 'react'
 import {Input} from 'antd'
-import { PhoneOutlined} from '@ant-design/icons'
+import { PhoneOutlined, ShoppingCartOutlined} from '@ant-design/icons'
 import SearchBar from './SearchBar'
 
 import {info} from './info'
@@ -8,6 +9,9 @@ import styles from './navbarStyle.module.css'
 const { Search } = Input
 
 export default function Navbar(){
+    
+    const [cartItemCount, setCartItemCount] = useState(0)
+
     return (
         <>
             <div className={styles.topBarContainer}>
@@ -37,8 +41,11 @@ export default function Navbar(){
                     <SearchBar />
                 </div>
                 
-                <div>
-                    Cart
+                <div className={styles.mainRightContainer}>
+                    <div className={styles.cartCount}>
+                        {cartItemCount}
+                    </div>
+                    <ShoppingCartOutlined className={styles.cartIcon}/>
                 </div>
             </div>
             <div className={styles.bottomContainer}>
