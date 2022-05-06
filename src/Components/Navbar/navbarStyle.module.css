@@ -1,22 +1,64 @@
 .topBarContainer{
-    border: 2px dotted red;
+    /* border: 2px dotted red; */
     display: flex;
     justify-content:flex-start;
     background-color: lightgrey;
+    height: 2em;
+}
+
+.topBarInfoContainer{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    margin-left: 230px;
+    width: 20%;
+    justify-content: space-between;
 }
 
 .topBarElement{
-    border: 2px solid gold;
+    /* border: 2px solid gold; */
     display: flex;
     align-items: center;
-    margin-left: 6em;
+}
+
+.topBarText{
+    margin-left: 1em;
 }
 
 .mainContainer{
-    border: 2px dashed blue;
+    /* border: 2px dashed blue; */
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 4em;
 }
 
+.mainLeftContainer{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 40%;
+    justify-content: space-between;
+}
 
+.logo:hover{
+    cursor: pointer;
+}
+
+.bottomContainer{
+    /* border: 2px solid red; */
+    height: 2em;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.bottomText{
+    margin-left: 230px;
+    color: blue;
+}
+
+.bottomText:hover{
+    cursor: pointer;
+}
