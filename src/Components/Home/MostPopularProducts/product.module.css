@@ -34,7 +34,8 @@
 }
 
 .productCard{
-    border: 2px solid black;
+    border: 2px solid white;
+    background-color: white;
     border-radius: 5px;
     align-items: center;
     text-align: center;

@@ -8,7 +8,7 @@ import MostPopularProducts from './MostPopularProducts'
 
 export default function Home(){
     return (
-            <div>
+            <div className={styles.homeContainer}>
                 <div className={styles.carouselContainer}>
                     <h2>Carousel</h2>
                 </div>
