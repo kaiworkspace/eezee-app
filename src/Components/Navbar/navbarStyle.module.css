@@ -9,7 +9,7 @@
     border: 2px solid gold;
     display: flex;
     align-items: center;
-    margin-left: 16em;
+    margin-left: 6em;
 }
 
 .mainContainer{
@@ -18,4 +18,5 @@
     justify-content: space-around;
     align-items: center;
 }
+
 

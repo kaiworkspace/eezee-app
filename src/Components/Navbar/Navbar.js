@@ -1,6 +1,6 @@
 import {Input} from 'antd'
-import { SearchOutlined, PhoneOutlined} from '@ant-design/icons'
-
+import { PhoneOutlined} from '@ant-design/icons'
+import SearchBar from './SearchBar'
 
 import {info} from './info'
 import styles from './navbarStyle.module.css'
@@ -30,8 +30,8 @@ export default function Navbar(){
                     <img src='https://api.eezee.sg/image/resize?height=44&width=150&url=https://storage.googleapis.com/imgez/eezee-logos/word-whitebg.png'/>
                     <p>View All brands</p>
                 </div>
-                <div>
-                    <Input.Search placeholder="input search text" renderIcon={<SearchOutlined />}/>
+                <div className={styles.searchBarContainer}>
+                    <SearchBar />
                 </div>
                 <div>
                     Cart
