@@ -1,3 +1,55 @@
 .featureBrandContainer{
-    border: 2px dotted blue;
+    /* border: 2px dotted blue; */
+    display: flex;
+    justify-content: center;
+}
+
+.featureBrandSubContainer{
+    /* border: 2px dotted blue; */
+    width: 60%;
+}
+
+.title{
+    /* border: 2px solid green; */
+    margin-bottom: 0;
+}
+
+.descriptionContainer{
+    /* border: 2px solid orange; */
+    height: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewMoreContainer{
+    display: flex;
+    align-items: center;
+    color: blue;
+}
+
+.viewMoreContainer:hover{
+    cursor: pointer;
+}
+
+.brandContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.brandCard{
+    border: 2px solid black;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+.brandCard:hover{
+    cursor: pointer;
 }

@@ -1,18 +1,41 @@
 import styles from "./featurebrandStyle.module.css"
 
+import { RightOutlined } from '@ant-design/icons'
+
+// simulate api fetching
+import {brands} from './brands'
+
 export default function FeaturedBrands(){
+    
+    const renderBrands=brands.map((brand)=>{
+        return (
+            <div 
+                className={styles.brandCard}
+                onClick={()=>{console.log("Card Clicked")}}>
+                <img src={brand.imgSrc}></img>
+                <h3>{brand.brandName}</h3>
+                <p>{brand.numberOfProducts}</p>
+            </div>
+        )
+    })
+    
+
     return (
         <div className={styles.featureBrandContainer}>
-            <h3>Featured Brands</h3>
-            <div>
-                <h4>Browse the full catalog of brands today</h4>
-                <div>
-                    <p>View More</p>
-                    <p>icon</p>
+            <div className={styles.featureBrandSubContainer}>
+                <h3 className={styles.title}>Featured Brands</h3>
+                <div className={styles.descriptionContainer}>
+                    <div className={styles.description}>
+                        <h4>Browse the full catalog today</h4>
+                    </div>
+                    <div className={styles.viewMoreContainer}>
+                        <p>View More</p>
+                        <RightOutlined />
+                    </div>
                 </div>
-            </div>
-            <div className={styles.brandContainer}>
-                
+                <div className={styles.brandContainer}>
+                    {renderBrands}
+                </div>
             </div>
         </div>
     )
