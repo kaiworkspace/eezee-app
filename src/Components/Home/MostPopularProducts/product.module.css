@@ -44,6 +44,8 @@
     padding: 0.5em;
     width: 150px;
     height: 300px;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .productCard:hover{
@@ -69,4 +71,10 @@
     height: 70px;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: black;
+    text-decoration: none;
+}
+
+.href{
+    text-decoration: none;
 }
