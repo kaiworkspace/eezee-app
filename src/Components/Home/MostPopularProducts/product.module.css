@@ -31,6 +31,8 @@
 .productContainer{
     display: flex;
     justify-content: space-around;
+    /* border: 2px solid red; */
+    margin-bottom: 5em;
 }
 
 .productCard{
