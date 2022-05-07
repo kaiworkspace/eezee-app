@@ -13,7 +13,7 @@ export default function MostPopularProducts(){
                         <Link
                             className={styles.link} 
                             to="/product"
-                            state={{data: "OK"}}></Link>
+                            state={{data: p}}></Link>
                         <img
                             className={styles.image} 
                             src={p.productImg}></img>
