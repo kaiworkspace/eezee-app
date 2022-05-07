@@ -18,8 +18,6 @@ export default function MostPopularProducts(){
                         <h3>{p.productPrice}</h3>
                     </div>
                     <p className={styles.productName}>{p.productName}</p>
-
-                
             </div>
         )
     })

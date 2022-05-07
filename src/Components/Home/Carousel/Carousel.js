@@ -21,8 +21,7 @@ export default function Carousel(){
     }
     
     const handleToggleCarousel=(event)=>{
-        // console.log(event.target.id)
-        setC_index(event.target.id)
+        setC_index(Number(event.target.id))
     }
 
     const increment_C_index=()=>{
