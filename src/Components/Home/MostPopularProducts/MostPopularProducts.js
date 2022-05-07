@@ -1,16 +1,19 @@
 import styles from './product.module.css'
-
+import { Link } from 'react-router-dom'
 import {product} from './product'
 
 export default function MostPopularProducts(){
     
     const renderProducts=product.map((p)=>{
         return (
-            <a href="/product" className={styles.href}>
                 <div
                     key={p.productId}
                     className={styles.productCard}
                     onClick={()=>{console.log("Product clicked")}}>
+                        <Link
+                            className={styles.link} 
+                            to="/product"
+                            state={{data: "OK"}}></Link>
                         <img
                             className={styles.image} 
                             src={p.productImg}></img>
@@ -20,7 +23,6 @@ export default function MostPopularProducts(){
                         </div>
                         <p className={styles.productName}>{p.productName}</p>
                 </div>
-            </a>
         )
     })
     
