@@ -33,6 +33,38 @@ export default function ProductDisplay(props){
         )
     })
 
+    const renderProductDescription=productInfo.additionalInfo.description.map((para)=>{
+        if(para.type == "title"){
+            return (
+                <h3>{para.text}</h3>
+            )
+        }
+        else if(para.type == "title_description"){
+            return (
+                <p>{para.text}</p>
+            )
+        }
+        else if(para.type=="main"){
+            return (
+                <p>{para.text}</p>
+            )
+        }
+        else if(para.type == "header"){
+            return (
+                <h4>{para.text}</h4>
+            )
+        }
+        else if(para.type == "list"){
+            return(
+                para.text.map((listItem)=>{
+                    return (
+                        <li>{listItem}</li>
+                    )
+                })
+            )
+        }
+    })
+
     return (
         <div className={styles.mainContainer}>
             <div className={styles.productName}>
@@ -55,7 +87,8 @@ export default function ProductDisplay(props){
                 {renderCarousel}
             </div>
             <div className={styles.productDescriptionContainer}>
-                {/* {productInfo.additionalInfo.description} */}
+                <h3>Product Description</h3>
+                {renderProductDescription}
             </div>
         </div>
     )
