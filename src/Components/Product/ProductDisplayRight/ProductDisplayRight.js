@@ -8,6 +8,7 @@ export default function ProductDisplayRight(props){
     const productInfo = props.productInfo.data
     const [productCount, setProductCount] = useState(1)
     const [countDisplay, setCountDisplay] = useState(1)
+    const [cartCount, setCartCount] = useState(0)
 
     const handleCountChange=(event)=>{
         setCountDisplay(event.target.value)
@@ -43,6 +44,12 @@ export default function ProductDisplayRight(props){
             }
         }
     }
+
+    const addToCart=()=>{
+        setCartCount(productCount)
+        // console.log(productCount)
+    }
+
     return (
         <>
             <div className={styles.priceContainer}>
@@ -80,13 +87,15 @@ export default function ProductDisplayRight(props){
             </div>
             <div>
                 <div className={styles.buttonContainer}>
-                    <h3 className={styles.addToCartButton}>Add to Cart</h3>
+                    <h3 
+                        className={styles.addToCartButton}
+                        onClick={addToCart}>
+                            Add to Cart</h3>
                 </div>
                 <div className={styles.buttonContainer}>
                     <h3 className={styles.addToFavButton}>Add to Favourites</h3>
                 </div>
             </div>
-
         </>
     )
 }
