@@ -1,0 +1,51 @@
+.mainContainer{
+    width: 730px;
+}
+
+.productName{
+    /* border: 2px solid grey; */
+    padding-left: 1em;
+}
+
+.modelBrandContainer{
+    /* border: 2px dotted purple; */
+    padding-left: 1em;
+}
+
+.modelBrandSubContainer{
+    display: flex;
+}
+
+.modelBrandLeft{
+    width: 60px;
+}
+
+.modelBrandRight{
+    color: blue;
+}
+
+.modelBrandRight:hover{
+    cursor: pointer;
+}
+
+.imageContainer{
+    /* border: 2px solid green; */
+}
+
+.productCarousel{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.carouselImgEN{
+    border: 2px solid blue;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.carouselImgNA{
+    border: 2px solid white;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}

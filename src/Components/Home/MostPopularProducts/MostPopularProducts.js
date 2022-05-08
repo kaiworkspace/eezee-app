@@ -1,6 +1,6 @@
 import styles from './product.module.css'
 import { Link } from 'react-router-dom'
-import {product} from './product'
+import {product} from './productList'
 
 export default function MostPopularProducts(){
     
