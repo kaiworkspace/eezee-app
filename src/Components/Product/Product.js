@@ -2,7 +2,8 @@ import React from 'react'
 import { useLocation } from 'react-router-dom'
 
 import styles from './style.module.css'
-import ProductDisplay from './ProductDisplay'
+import ProductDisplayLeft from './ProductDisplayLeft'
+import ProductDisplayRight from './ProductDisplayRight'
 // location.state
 
 export default function Product(){
@@ -11,19 +12,10 @@ export default function Product(){
         <div className={styles.mainFlex}>
             <div className={styles.mainContainer}>
                 <div className={styles.leftContainer}>
-                    <ProductDisplay productInfo={location.state}/>
+                    <ProductDisplayLeft productInfo={location.state}/>
                 </div>
                 <div className={styles.rightContainer}>
-                    <div className={styles.priceContainer}>
-                        $60.00                        
-                    </div>
-                    <div className={styles.quantityContainer}>
-                        Quantity: 
-                    </div>
-                    <div className={styles.buttonContainer}>
-                        <div>Add to Cart</div>
-                        <div>Add to Favourites</div>
-                    </div>
+                    <ProductDisplayRight productInfo={location.state}/>
                 </div>
             </div>
         </div>

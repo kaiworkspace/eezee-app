@@ -1,0 +1,98 @@
+.priceContainer{
+    display: flex;
+    color: blue;
+    margin: 1em;
+    border-bottom: 1px dotted lightgrey;
+}
+
+.currency{
+    font-size: 30px;
+}
+
+.price{
+    font-size: 40px;
+}
+
+.quantityContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1em;
+    font-size: 20px;
+}
+
+.quantityCounter{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+    margin-left: 1em;
+}
+
+.quantityInputContainer{
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantityInput{
+    width: 35px;
+    height: 35px;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.icon{
+    border: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+
+.icon:hover{
+    cursor: pointer;
+    color: blue;
+    border-color: blue;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.addToCartButton{
+    border: 2px solid blue;
+    border-radius: 5px;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: blue;
+}
+
+.addToFavButton{
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+
+.addToCartButton:hover{
+    cursor: pointer;
+}
+
+.addToFavButton:hover{
+    cursor: pointer;
+}
