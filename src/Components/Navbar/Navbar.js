@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import {Input} from 'antd'
 import { PhoneOutlined, ShoppingCartOutlined} from '@ant-design/icons'
 import SearchBar from './SearchBar'
@@ -37,9 +38,12 @@ export default function Navbar(){
             <div className={styles.flexMid}>
                 <div className={styles.mainContainer}>
                     <div className={styles.mainLeftContainer}>
+                        <Link 
+                            to="/"
+                            className={styles.logoLink}>   
+                        </Link>
                         <img 
                             className={styles.logo}
-                            to="/"
                             src='https://api.eezee.sg/image/resize?height=44&width=150&url=https://storage.googleapis.com/imgez/eezee-logos/word-whitebg.png'/>
                         <SearchBar />
                     </div>
