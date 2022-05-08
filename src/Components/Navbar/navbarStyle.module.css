@@ -86,9 +86,9 @@
 }
 
 .cartCount{
-    border: 2px solid blue;
+    border: 2px solid rgb(42, 100, 219);
     border-radius: 50%;
-    background-color: blue;
+    background-color: rgb(42, 100, 219);
     color: white;
     width: 1em;
     position: absolute;
@@ -98,6 +98,7 @@
 .cartIcon{
     font-size: 2.5em;
     padding-top: 5px;
+    color: rgb(70, 70, 70);
 }
 
 .flexBottom{
