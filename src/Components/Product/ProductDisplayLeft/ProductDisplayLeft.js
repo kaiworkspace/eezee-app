@@ -1,7 +1,7 @@
 import { useState} from 'react'
-import styles from './productDisplayStyle.module.css'
+import styles from './productDisplayLeftStyle.module.css'
 
-export default function ProductDisplay(props){
+export default function ProductDisplayLeft(props){
     
     const productInfo = props.productInfo.data
 
