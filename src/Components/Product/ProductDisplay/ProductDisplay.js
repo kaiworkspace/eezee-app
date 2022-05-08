@@ -54,6 +54,11 @@ export default function ProductDisplay(props){
                 <h4>{para.text}</h4>
             )
         }
+        else if(para.type == "note"){
+            return (
+                <p>{para.text}</p>
+            )
+        }
         else if(para.type == "list"){
             return(
                 para.text.map((listItem)=>{
