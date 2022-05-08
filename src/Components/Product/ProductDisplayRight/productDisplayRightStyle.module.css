@@ -1,8 +1,8 @@
 .priceContainer{
     display: flex;
-    color: blue;
+    color:rgb(42, 100, 219);
     margin: 1em;
-    border-bottom: 1px dotted lightgrey;
+    border-bottom: 1px dotted #F0F0F0;
 }
 
 .currency{
@@ -29,8 +29,8 @@
 }
 
 .quantityInputContainer{
-    border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid #F0F0F0;
+    border-bottom: 1px solid #F0F0F0;
     height: 40px;
     width: 40px;
     display: flex;
@@ -47,7 +47,7 @@
 }
 
 .icon{
-    border: 1px solid lightgrey;
+    border: 1px solid #F0F0F0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,8 +57,8 @@
 
 .icon:hover{
     cursor: pointer;
-    color: blue;
-    border-color: blue;
+    color: rgb(42, 100, 219);
+    border-color: rgb(42, 100, 219);
 }
 
 .buttonContainer{
@@ -67,7 +67,7 @@
 }
 
 .addToCartButton{
-    border: 2px solid blue;
+    border: 2px solid rgb(42, 100, 219);
     border-radius: 5px;
     width: 400px;
     height: 50px;
@@ -75,18 +75,18 @@
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: blue;
+    background-color: rgb(42, 100, 219);
 }
 
 .addToFavButton{
-    border: 2px solid lightgrey;
+    border: 2px solid #F0F0F0;
     border-radius: 5px;
     width: 400px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: blue;
+    color: rgb(42, 100, 219);
 }
 
 .addToCartButton:hover{

@@ -21,7 +21,7 @@
 }
 
 .modelBrandRight{
-    color: blue;
+    color: rgb(42, 100, 219);
 }
 
 .modelBrandRight:hover{
@@ -33,13 +33,15 @@
 }
 
 .productCarousel{
-    /* border: 2px solid red; */
+    border-bottom: 2px solid #F0F0F0;
     display: flex;
     justify-content: center;
+    padding: 1em;
+    margin: 1em;
 }
 
 .carouselImgEN{
-    border: 2px solid blue;
+    border: 2px solid rgb(42, 100, 219);
     margin-left: 0.5em;
     margin-right: 0.5em;
 }
