@@ -57,7 +57,7 @@
 }
 
 .priceContainer{
-    color: blue;
+    color: rgb(42, 100, 219);
     display: flex;
     justify-content: flex-start;
 }
