@@ -15,7 +15,7 @@ export default function FeaturedBrands(){
                 onClick={()=>{console.log("Card Clicked")}}>
                 <img src={brand.imgSrc}></img>
                 <h3>{brand.brandName}</h3>
-                <p>{brand.numberOfProducts}</p>
+                <p className={styles.productNumber}>{brand.numberOfProducts} Products</p>
             </div>
         )
     })

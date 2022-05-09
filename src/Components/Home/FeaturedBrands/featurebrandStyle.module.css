@@ -8,6 +8,7 @@
 .featureBrandSubContainer{
     /* border: 2px dotted blue; */
     width: 63%;
+    /* width: 1160px; */
 }
 
 .title{
@@ -44,9 +45,10 @@
 }
 
 .brandCard{
-    border: 2px solid white;
+    border: 2px solid  #E4E5E7;
     background-color: white;
     border-radius: 5px;
+    /* height: 200px; */
     align-items: center;
     text-align: center;
     padding: 1em;
@@ -56,4 +58,8 @@
 
 .brandCard:hover{
     cursor: pointer;
+}
+
+.productNumber{
+    font-size: smaller;
 }

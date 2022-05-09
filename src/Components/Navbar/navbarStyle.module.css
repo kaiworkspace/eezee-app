@@ -11,13 +11,14 @@
     background-color: #F0F0F0;
     height: 2em;
     width: 63%;
+    /* width: 1200px; */
 }
 
 .topBarInfoContainer{
     /* border: 2px dotted green; */
     display: flex;
     align-items: center;
-    width: 30%;
+    width: 300px;
 }
 
 .topBarRegion{
@@ -31,6 +32,7 @@
     display: flex;
     align-items: center;
     margin-left: 2em;
+    width: 150px;
 }
 
 .topBarContact:hover{
@@ -54,6 +56,7 @@
     padding-top: 1em;
     height: 4em;
     width: 63%;
+    /* width: 1200px; */
 }
 
 .mainLeftContainer{
@@ -93,6 +96,9 @@
     width: 1em;
     position: absolute;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cartIcon{
@@ -113,6 +119,7 @@
     display: flex;
     align-items: center;
     width: 63%;
+    /* width: 1200px; */
 }
 
 .bottomText{
