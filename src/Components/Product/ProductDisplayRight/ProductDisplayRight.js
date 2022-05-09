@@ -1,7 +1,9 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 
 import { PlusOutlined, MinusOutlined, UnderlineOutlined } from '@ant-design/icons'
 import styles from './productDisplayRightStyle.module.css'
+
+import CartContext from '../../../CartContext'
 
 export default function ProductDisplayRight(props){
     
@@ -9,6 +11,8 @@ export default function ProductDisplayRight(props){
     const [productCount, setProductCount] = useState(1)
     const [countDisplay, setCountDisplay] = useState(1)
     const [cartCount, setCartCount] = useState(0)
+
+    const {cartItemCount, setCartItemCount} = useContext(CartContext)
 
     const handleCountChange=(event)=>{
         setCountDisplay(event.target.value)
@@ -46,8 +50,8 @@ export default function ProductDisplayRight(props){
     }
 
     const addToCart=()=>{
-        setCartCount(productCount)
-        // console.log(productCount)
+        setCartItemCount((prevCount)=> prevCount + productCount)
+        console.log(productCount)
     }
 
     return (

@@ -1,17 +1,17 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
-import {Input} from 'antd'
 import { PhoneOutlined, ShoppingCartOutlined} from '@ant-design/icons'
 import SearchBar from './SearchBar'
 
 import {info} from './info'
 import styles from './navbarStyle.module.css'
 
-const { Search } = Input
+import CartContext from '../../CartContext'
 
 export default function Navbar(){
     
-    const [cartItemCount, setCartItemCount] = useState(0)
+    // const [cartItemCount, setCartItemCount] = useState(0)
+    const {cartItemCount} = useContext(CartContext)
 
     return (
         <div>
