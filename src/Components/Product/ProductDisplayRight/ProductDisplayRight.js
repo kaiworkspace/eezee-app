@@ -1,6 +1,6 @@
 import { useContext, useState } from "react"
 
-import { PlusOutlined, MinusOutlined, UnderlineOutlined } from '@ant-design/icons'
+import { PlusOutlined, MinusOutlined, UnderlineOutlined, AlertTwoTone } from '@ant-design/icons'
 import styles from './productDisplayRightStyle.module.css'
 
 import CartContext from '../../../CartContext'
@@ -51,6 +51,7 @@ export default function ProductDisplayRight(props){
 
     const addToCart=()=>{
         setCartItemCount((prevCount)=> prevCount + productCount)
+        alert("Items has been added to cart")
         console.log(productCount)
     }
 
